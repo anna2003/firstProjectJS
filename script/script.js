@@ -1,18 +1,19 @@
 'use strict';
-let a=5;
-console.log(a);
-var firstVar=1;
+let money = prompt("Ваш бюджет на месяц?", "10000");
+let time = prompt("Введите дату в формате YYYY-MM-DD", "2019-07-03");
 
-let secondVar=2;
-const pi=3.1415;
-console.log(secondVar,pi);
-let array=['first',1,2,true];
-console.log(array);
-let obj={
-    name:"Jon",
-    age:18,
-    isMarried:true
+let appData = {
+    budjet: money,
+    timeData: time,
+    expenses: {},
+    optionalExpenses: {},
+    income: [],
+    savings: false
 };
-console.log(obj.age);
-let s="name";
-console.log(obj[s]);
+let q1 = prompt("Введите обязательную статью расходов в этом месяце", ""),
+    q2 = prompt("Во сколько обойдется?", "");
+appData.expenses[q1] = q2;
+q1 = prompt("Введите обязательную статью расходов в этом месяце", "");
+q2 = prompt("Во сколько обойдется?", "");
+appData.expenses[q1] = q2;
+alert(money / 30);
