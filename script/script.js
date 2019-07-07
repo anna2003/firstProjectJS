@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 let money = prompt("Ваш бюджет на месяц?", "10000");
 let time = prompt("Введите дату в формате YYYY-MM-DD", "2019-07-03");
 
